@@ -17,13 +17,11 @@
     <sprite>sprites\Door_spr</sprite>
     <sprite>sprites\BrokenPiece_spr</sprite>
     <sprite>sprites\Castle_spr</sprite>
-    <sprite>sprites\Castle2_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Stone_Background</background>
     <background>background\black_background</background>
     <background>background\Castle_background</background>
-    <background>background\Caslte_background2</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -39,8 +37,8 @@
     <object>objects\EndGame_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Level2</room>
     <room>rooms\Level1</room>
+    <room>rooms\Level2</room>
     <room>rooms\Tuto</room>
     <room>rooms\Game_OverRoom</room>
   </rooms>
