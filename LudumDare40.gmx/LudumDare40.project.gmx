@@ -7,11 +7,19 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\wall_spr</sprite>
+    <sprite>sprites\black_spr</sprite>
+    <sprite>sprites\PlayerCube_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Stone_Background</background>
+    <background>background\black_background</background>
   </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\PlayerCube_obj</object>
+    <object>objects\StonePlatform_obj</object>
+    <object>objects\camera_obj</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>
   </rooms>
