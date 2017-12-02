@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>
-global.goldCount += 10;
+global.goldCount += 1;
 global.playerweight -= 0.01;
+
+audio_play_sound(Coin_get_snd, 10, false);
 
 instance_destroy();
 </string>

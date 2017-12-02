@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y -= 1;
+            <string>
+if PlayerCube_obj.y &lt; 1750
+{
+    y -= 1;
+}
 
 
 
