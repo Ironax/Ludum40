@@ -31,7 +31,7 @@ global.goldCount = 0;
 
 global.playerweight = 1;
 
-global.pieceweight = 0.17;
+global.pieceweight = 0.04;
 
 grav = 0.15;
 

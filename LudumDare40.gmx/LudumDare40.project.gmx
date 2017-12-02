@@ -16,6 +16,7 @@
     <sprite>sprites\Coin_spr</sprite>
     <sprite>sprites\Door_spr</sprite>
     <sprite>sprites\BrokenPiece_spr</sprite>
+    <sprite>sprites\PressSpace</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Stone_Background</background>
@@ -26,17 +27,19 @@
     <font>fonts\Gold_fnt</font>
   </fonts>
   <objects name="objects">
-    <object>objects\PlayerCube_obj</object>
     <object>objects\StonePlatform_obj</object>
+    <object>objects\PlayerCube_obj</object>
     <object>objects\camera_obj</object>
     <object>objects\coin_obj</object>
     <object>objects\Door_obj</object>
     <object>objects\BrokenPiece_obj</object>
     <object>objects\EndGame_obj</object>
+    <object>objects\PressSpace_obj</object>
+    <object>objects\HUD</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Level1</room>
     <room>rooms\Tuto</room>
+    <room>rooms\Level1</room>
     <room>rooms\Game_OverRoom</room>
   </rooms>
   <help>
