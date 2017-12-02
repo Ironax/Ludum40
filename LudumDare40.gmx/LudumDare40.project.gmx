@@ -17,11 +17,9 @@
     <sprite>sprites\PlayerCube_spr</sprite>
     <sprite>sprites\Coin_spr</sprite>
     <sprite>sprites\Door_spr</sprite>
-    <sprite>sprites\Castle_spr</sprite>
     <sprite>sprites\BrokenPiece_spr</sprite>
+    <sprite>sprites\Castle_spr</sprite>
     <sprite>sprites\Castle2_spr</sprite>
-    <sprite>sprites\SpaceBar_spr</sprite>
-    <sprite>sprites\Void</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Stone_Background</background>
@@ -48,6 +46,7 @@
     <object>objects\BrokenPiece_obj</object>
     <object>objects\EndGame_obj</object>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <object>objects\Win_obj</object>
 =======
     <object>objects\TriggerSpaceBar_obj</object>
@@ -65,6 +64,13 @@
 =======
     <room>rooms\Level2</room>
 >>>>>>> ca40e7c44cbf070e9300642f95a6f13943446a8c
+=======
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\Level2</room>
+    <room>rooms\Level1</room>
+    <room>rooms\Tuto</room>
+>>>>>>> parent of 684ac1d... Tuto done
     <room>rooms\Game_OverRoom</room>
   </rooms>
   <help>
