@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\Coin_get_snd</sound>
     <sound>sound\Coin_drop_snd</sound>
+    <sound>sound\Menu</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\wall_spr</sprite>
@@ -31,10 +32,12 @@
     <object>objects\coin_obj</object>
     <object>objects\Door_obj</object>
     <object>objects\BrokenPiece_obj</object>
+    <object>objects\EndGame_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>
     <room>rooms\Tuto</room>
+    <room>rooms\Game_OverRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
