@@ -8,6 +8,41 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+grav = 0.1;
+
+hsp = 0;
+
+vsp = 0;
+
+jumpspeed = 10;
+
+movespeed = 4;
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,25 +60,86 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(ord("Z"))
+            <string>keyRight = keyboard_check(ord("D"));
+
+keyLeft = -keyboard_check(ord("Q"));
+
+keyUp = keyboard_check(ord("Z"));
+
+
+if keyboard_check(ord("D"))
 {
-    y -= 5;
+    image_xscale = 1;
 }
 
 if keyboard_check(ord("Q"))
 {
-    x -= 5;
+    image_xscale = - 1;
 }
 
-if keyboard_check(ord("S"))
+
+if (PlayerCube_obj.x &lt; 0)
 {
-    y += 5;
+    PlayerCube_obj.x = 570;
 }
 
-if keyboard_check(ord("D"))
+if (PlayerCube_obj.x &gt; 600)
 {
-    x += 5;
+    PlayerCube_obj.x = 30;
 }
+
+// Reaction
+
+move = keyRight + keyLeft;
+hsp = move * movespeed;
+
+if (vsp &lt; 10 )
+{
+    vsp += grav;
+}
+
+if (place_meeting(x , y + 1, StonePlatform_obj))
+{
+    vsp = keyUp * -movespeed;    
+}
+
+//Horizontal collision
+if (place_meeting(x + hsp, y, StonePlatform_obj))
+{
+    while(!place_meeting(x + sign(hsp), y, StonePlatform_obj))
+    {
+        x += sign(hsp);
+    }
+    
+    hsp = 0;
+}
+x += hsp;
+
+//Vertical collision
+if (place_meeting(x, y + vsp, StonePlatform_obj))
+{
+    while(!place_meeting(x , y + sign(vsp) ,StonePlatform_obj))
+    {
+        y += sign(vsp);
+    }
+    vsp = 0;
+}
+y += vsp;
+
+//diagonal collision
+if(place_meeting(x+hsp, y+vsp, StonePlatform_obj))
+{
+    while(!place_meeting(x+sign(hsp), y + sign(vsp), StonePlatform_obj))
+    {
+        x+= sign(hsp);
+        y+= sign(vsp);
+    }
+    hsp = 0;
+    vsp = 0;
+}
+
+x += hsp;
+y += vsp;
 </string>
           </argument>
         </arguments>
