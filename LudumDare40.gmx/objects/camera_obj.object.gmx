@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> audio_play_sound(Menu, 10, true);
+            <string> audio_play_sound(Level_music, 10, true);
 </string>
           </argument>
         </arguments>
@@ -49,13 +49,14 @@
           <argument>
             <kind>1</kind>
             <string>
-if PlayerCube_obj.y &lt; 1800
+if PlayerCube_obj.y &lt; 1800 &amp;&amp; PlayerCube_obj.y &gt; 150
 {
     y -= 1;
 }
 
 if PlayerCube_obj.y &gt; camera_obj.y + 500
 {
+    instance_destroy(PlayerCube_obj);
     room_goto(Game_OverRoom);
 }
 

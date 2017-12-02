@@ -7,7 +7,7 @@
   <sounds name="sound">
     <sound>sound\Coin_get_snd</sound>
     <sound>sound\Coin_drop_snd</sound>
-    <sound>sound\Menu</sound>
+    <sound>sound\Level_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\wall_spr</sprite>
@@ -36,6 +36,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>
+    <room>rooms\Level2</room>
     <room>rooms\Tuto</room>
     <room>rooms\Game_OverRoom</room>
   </rooms>

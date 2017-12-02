@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_end();
+            <string>
+instance_destroy(PlayerCube_obj);
+room_goto_next();
+
 </string>
           </argument>
         </arguments>
