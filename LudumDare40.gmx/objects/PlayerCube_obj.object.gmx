@@ -26,15 +26,20 @@
           <argument>
             <kind>1</kind>
             <string>
+
+global.goldCount = 0;
+
+global.playerweight = 1;
+
 grav = 0.1;
 
 hsp = 0;
 
 vsp = 0;
 
-jumpspeed = 4;
+jumpspeed = 4.5;
 
-movespeed = 4;
+movespeed = 3.5;
 
 
 
@@ -70,13 +75,11 @@ keyUp = keyboard_check(ord("Z"));
 if keyboard_check(ord("D"))
 {
     image_xscale = 1.7;
-   
 }
 
 if keyboard_check(ord("Q"))
 {
-    image_xscale = - 1.7;
-    
+    image_xscale = - 1.7; 
 }
 
 
@@ -102,7 +105,7 @@ if (vsp &lt; 10 )
 
 if (place_meeting(x , y + 1, StonePlatform_obj))
 {
-    vsp = keyUp * -jumpspeed;    
+    vsp = keyUp * -jumpspeed * global.playerweight ;    
 }
 
 //Horizontal collision
@@ -143,12 +146,7 @@ if(place_meeting(x+hsp, y+vsp, StonePlatform_obj))
 x += hsp;
 y += vsp;
 
-hh = window_get_height();
 
-if PlayerCube_obj.y &lt; hh 
-{
-    game_end();
-}
 </string>
           </argument>
         </arguments>
