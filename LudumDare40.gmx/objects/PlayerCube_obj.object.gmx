@@ -31,7 +31,7 @@ global.goldCount = 0;
 
 global.playerweight = 1;
 
-grav = 0.1;
+grav = 0.15;
 
 hsp = 0;
 
@@ -74,12 +74,12 @@ keyUp = keyboard_check(ord("Z"));
 
 if keyboard_check(ord("D"))
 {
-    image_xscale = 1.7;
+    image_xscale = 1;
 }
 
 if keyboard_check(ord("Q"))
 {
-    image_xscale = - 1.7; 
+    image_xscale = - 1; 
 }
 
 
