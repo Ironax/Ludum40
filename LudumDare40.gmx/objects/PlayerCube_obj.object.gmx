@@ -31,15 +31,13 @@ global.goldCount = 0;
 
 global.playerweight = 1;
 
-global.pieceweight = 0.3;
-
 grav = 0.15;
 
 hsp = 0;
 
 vsp = 0;
 
-jumpspeed = 5;
+jumpspeed = 4.5;
 
 movespeed = 3.5;
 
@@ -79,9 +77,9 @@ if keyboard_check_pressed(vk_space) &amp;&amp; global.goldCount &gt; 0
 
        global.goldCount -= 1;
        
-       if global.playerweight &gt; 1
+       if global.playerweight &lt; 1
        {
-            global.playerweight -= global.pieceweight;
+            global.playerweight += 0.1;
        }
 }
 
@@ -100,27 +98,27 @@ if keyboard_check(vk_left)
 
 if (PlayerCube_obj.x &lt; 0)
 {
-    PlayerCube_obj.x = 0;
+    PlayerCube_obj.x = 570;
 }
 
 if (PlayerCube_obj.x &gt; 600)
 {
-    PlayerCube_obj.x = 600;
+    PlayerCube_obj.x = 30;
 }
 
 // Reaction
 
 move = keyRight + keyLeft;
-hsp = move * movespeed / global.playerweight;
+hsp = move * movespeed;
 
-//if (vsp &lt; 10 )
+if (vsp &lt; 10 )
 {
-    vsp += grav * global.playerweight;
+    vsp += grav;
 }
 
 if (place_meeting(x , y + 1, StonePlatform_obj))
 {
-    vsp = keyUp * -jumpspeed ;    
+    vsp = keyUp * -jumpspeed * global.playerweight ;    
 }
 
 //Horizontal collision

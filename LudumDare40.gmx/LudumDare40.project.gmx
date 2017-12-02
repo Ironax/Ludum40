@@ -32,7 +32,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>
-    <room>rooms\Tuto</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
