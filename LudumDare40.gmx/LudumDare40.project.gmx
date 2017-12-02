@@ -16,18 +16,16 @@
     <sprite>sprites\Coin_spr</sprite>
     <sprite>sprites\Door_spr</sprite>
     <sprite>sprites\Castle_spr</sprite>
-<<<<<<< HEAD
     <sprite>sprites\BrokenPiece_spr</sprite>
     <sprite>sprites\Castle2_spr</sprite>
     <sprite>sprites\SpaceBar_spr</sprite>
     <sprite>sprites\Void</sprite>
-=======
->>>>>>> ba0ec4686c3faf73e61cb108e4afa13239b02ba1
   </sprites>
   <backgrounds name="background">
     <background>background\Stone_Background</background>
     <background>background\black_background</background>
     <background>background\Castle_background</background>
+    <background>background\Caslte_background2</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -46,11 +44,6 @@
     <object>objects\HUD_obj</object>
   </objects>
   <rooms name="rooms">
-<<<<<<< HEAD
-=======
-    <room>rooms\Level1</room>
-    <room>rooms\Level2</room>
->>>>>>> ba0ec4686c3faf73e61cb108e4afa13239b02ba1
     <room>rooms\Tuto</room>
     <room>rooms\Level1</room>
     <room>rooms\Level2</room>
