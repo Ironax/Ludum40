@@ -8,6 +8,8 @@
     <sound>sound\Coin_get_snd</sound>
     <sound>sound\Coin_drop_snd</sound>
     <sound>sound\Level_music</sound>
+    <sound>sound\GameOver_snd</sound>
+    <sound>sound\FinalScreen_Sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\wall_spr</sprite>
@@ -22,10 +24,13 @@
     <background>background\Stone_Background</background>
     <background>background\black_background</background>
     <background>background\Castle_background</background>
+    <background>background\WinBackground</background>
+    <background>background\background4</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\Gold_fnt</font>
+    <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
     <object>objects\PlayerCube_obj</object>
@@ -35,11 +40,13 @@
     <object>objects\Door_obj</object>
     <object>objects\BrokenPiece_obj</object>
     <object>objects\EndGame_obj</object>
+    <object>objects\Win_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Level1</room>
-    <room>rooms\Level2</room>
     <room>rooms\Tuto</room>
+    <room>rooms\Level2</room>
+    <room>rooms\Win</room>
     <room>rooms\Game_OverRoom</room>
   </rooms>
   <help>
