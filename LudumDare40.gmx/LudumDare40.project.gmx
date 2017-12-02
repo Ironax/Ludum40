@@ -35,8 +35,8 @@
     <object>objects\EndGame_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Level1</room>
     <room>rooms\Level2</room>
+    <room>rooms\Level1</room>
     <room>rooms\Tuto</room>
     <room>rooms\Game_OverRoom</room>
   </rooms>
