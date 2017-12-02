@@ -17,15 +17,22 @@
     <sprite>sprites\PlayerCube_spr</sprite>
     <sprite>sprites\Coin_spr</sprite>
     <sprite>sprites\Door_spr</sprite>
-    <sprite>sprites\BrokenPiece_spr</sprite>
     <sprite>sprites\Castle_spr</sprite>
+    <sprite>sprites\BrokenPiece_spr</sprite>
+    <sprite>sprites\Castle2_spr</sprite>
+    <sprite>sprites\SpaceBar_spr</sprite>
+    <sprite>sprites\Void</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Stone_Background</background>
     <background>background\black_background</background>
     <background>background\Castle_background</background>
+<<<<<<< HEAD
     <background>background\WinBackground</background>
     <background>background\background4</background>
+=======
+    <background>background\Caslte_background2</background>
+>>>>>>> ca40e7c44cbf070e9300642f95a6f13943446a8c
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -40,13 +47,24 @@
     <object>objects\Door_obj</object>
     <object>objects\BrokenPiece_obj</object>
     <object>objects\EndGame_obj</object>
+<<<<<<< HEAD
     <object>objects\Win_obj</object>
+=======
+    <object>objects\TriggerSpaceBar_obj</object>
+    <object>objects\SpaceBarInfo_obj</object>
+    <object>objects\HUD_obj</object>
+>>>>>>> ca40e7c44cbf070e9300642f95a6f13943446a8c
   </objects>
   <rooms name="rooms">
+    <room>rooms\Tuto</room>
     <room>rooms\Level1</room>
+<<<<<<< HEAD
     <room>rooms\Tuto</room>
     <room>rooms\Level2</room>
     <room>rooms\Win</room>
+=======
+    <room>rooms\Level2</room>
+>>>>>>> ca40e7c44cbf070e9300642f95a6f13943446a8c
     <room>rooms\Game_OverRoom</room>
   </rooms>
   <help>
